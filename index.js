@@ -16,7 +16,7 @@ function createHtml (opt) {
     opt.base ? ('<base href="' + opt.base + '">') : '',
     opt.css ? ('<link rel="stylesheet" href="' + opt.css + '">') : '',
     opt.favicon ? favicon : '',
-    '<link rel="apple-touch-icon" href="../touch-icon.png"/>',
+    opt.appicon ? ('<link rel="apple-touch-icon" href="'+ opt.appicon +'"/>') : '',
     '</head><body>',
     opt.entry ? ('<script src="' + opt.entry + '"></script>') : '',
     '</body>',
